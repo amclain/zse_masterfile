@@ -1,0 +1,244 @@
+;ZSE POSITION ID FILE FOR ASRC/VRC 4.00 08-July-12 
+; 
+;Created for ZSE by Dillon TenBrink / dillon@seaartcc.net 
+;Updated for ZSE by Garrett Wiedmeier / garrett@seaartcc.net 
+;Updated for ZSE by Owen Catherwood / owen@seaartcc.net
+; 
+;Update 1.00 - September 2002, Initial release. 
+;Update 1.01 - September 2002, Updated squawk codes to make all ZSE codes fall in 
+;              the 6000-6777 range to avoid conflicts with ZOA (3000's) and ZLA (1000's maybe) 
+;Update 1.10 - December 2002, Updated squawk ranges just prior to CalScream 8. These should all 
+;              be correct for long-term use hence the 1.1 update. Added Oakland "C" Center at 08. 
+;Update 1.11 - December 2002, Updated incorrect entry for Tacoma. Was TCM, now TIW. 
+;Update 1.20 - December 2002, HUGE BIG BUG found once I got ASRC for myself. S46 and Centre codes 
+;              were overlaping. Did some consolidation and renumbering. MAJOR UPDATE. 
+;Update 1.21 - December 2002, Changed all Centers ARTSTAGs to C and Added G's for ground control 
+;              along with minor bug fixes. 
+;Update 1.30 - December 2002, Changed TRACON Code references from numerical to alphanumeric. 
+;              Initial release post-ASRC beta. Instructors need to provide feedback on use please. 
+;Update 1.31 - January 2003, Fixed Center and Portland Tower Assignments. Re-Added Seattle Feeder Sector. 
+;Update 1.32 - January 2003, Fixed minor bugs with YVR and tower freq. 
+;Update 1.34 - February 2003, changed center frequencies. 
+;Update 1.40 - February 2003, another revision to center frequencies and swapped GEG APP/DEP. Mandatory update. 
+;Update 1.41 - March 2003, Updated KSEA, KPDX, KGEG Clearance delivery positions. 
+;Update 1.42 - June 2003, Added Kingsley approach due to more use. Added YYJ App and corrected YVR Center freqs. 
+;              Removed PDX North Tower due to SOP change. 
+;Update 1.45 - March 2004, Changed departure references to approach for dual operations/phase out of DEP positions. 
+;Update 1.46 - May 2006, added TMU_FSS line, updated SLC and EDM frequencies for new Enroute CTR preferences 
+;Update 1.47 - Aug 2006, changed codes to exclude 00's per VATUSA mandate. 
+;Update 2.00 - March 2008: MAJOR REQUIRED UPDATE, incrementing version whole number for clarification of major-ness 
+;              Added BLI,LWS,PDT,SLE,RDM,OLM,ALW TWR/GND/DEL under appropriate parent section 
+;              Assigned new squawk codes to 8's based on reserved beacon allocation plan 
+;              Added PSC,YKM,MWH,BFI,PAE,TIW,RNT,TTD,HIO,SFF GND/DEL 
+;              Changed PAE,BFI TWR frequencies to match SOP frequencies 
+;              Changed S46 positions to add event positions 
+;              Changed S46/Vancouver/Other centers Sector ID's and data tags to relect real-life of S46 on the 1's 
+;Update 2.01 - October 2008: Updated S46 primary frequency
+;Update 3.00 - November 2008: MAJOR REQUIRED UPDATE
+;              S46 Y sector (departure+satellite) can now be Y_APP or Y_DEP
+;              Added S46 N (Satellite) sectors
+;              Added KGRF TWR/GND
+;              Added P80 sectors
+;              Rounded PDX DEL frequency to 100th place - Most FS9/X aircraft cannot tune .xx5
+;              Changed GEG APP/DEP to E/W with corresponding tag changes
+;              Removed MWH DEP - frequency is enroute low sector.
+;              Split PSC APP into N/S (really NW/SE) with corresponding frequencies
+;              Split EUG APP into E/W with 119.600 being primary frequency for approach controllers
+;              Removed MFR DEP - frequency is enroute low sector.
+;              Moved Whidbey positions to separate number (9's)
+;              Split Whidbey approach into E/W with 118.200 as combined frequency
+;              Added NUW GND
+;              Updated LMT TWR frequency
+;              Added SKA GND
+;              Changed BFI TWR primary frequency
+;              Added split PDX/SEA tower positions
+;Update 3.00b  - Corrected PAE TWR frequency
+;Update 3.01   - Incorporates RW frequency changes
+;Update 3.02a  - January 2010: Added splits for high/low CTR.
+;Update 3.02b  - Adds S46 Paine Sector
+;Update 4.00 - July 2012: MAJOR REQUIRED UPDATE
+;              Reallocated beacon codes for all facilities
+; 
+;USE THIS FILE TO CREATE UNIQUE STATIC CONTROLLER POSITION ID'S FOR YOUR ASRC RADAR CLIENT. 
+;AMENDING THIS FILE ONLY CHANGES THE WAY CONTROLLERS APPEAR TO YOU, AND DO NOT AFFECT 
+;THE WAY OTHER CLIENTS SEE YOU, OR THE WAY THAT THEY SEE OTHER CONTROLLERS. 
+;THIS FILE USES THE FOLLOWING FORMAT --> 
+;NAME:RADIONAME:FREQ:SECID:ARTSTAG:CALLPREFIX:CALLSUFFIX:LINE1:LINE2:LSQUAWK:HSQUAWK 
+; 
+; SEATTLE CENTER (0'S) / 6601-6677 
+; 
+Seattle Center:Seattle Center:124.200:01:C:SEA:CTR:SEA:CTR:6601:6677     ;Scappoose 
+Seattle S Center:Seattle Center:126.100:0S:C:SEA:CTR:SEA:S-CTR:4701:4777 ;Wenatchee 
+Seattle N Center:Seattle Center:120.300:0N:C:SEA:CTR:SEA:N-CTR:6601:6677 ;Beacon Hill 
+Seattle A Center:Seattle Center:126.600:0A:C:SEA:CTR:SEA:A-CTR:6601:6637 ;NW SECTOR 
+Seattle B Center:Seattle Center:134.650:0B:C:SEA:CTR:SEA:B-CTR:6640:6677 ;MID SECTOR 
+Seattle C Center:Seattle Center:128.450:0C:C:SEA:CTR:SEA:C-CTR:4740:4777 ;NE SECTOR 
+Seattle D Center:Seattle Center:135.150:0D:C:SEA:CTR:SEA:D-CTR:4701:4737 ;SOUTH SECTOR 
+Seattle High Center:-:135.150:0H:C:SEA:CTR:SEA:H-CTR:6601:6677 ;High Sector
+Seattle Low Center:-:124.200:0L:C:SEA:CTR:SEA:L-CTR:4701:4777 ;Low Sector
+;4-way high/low split
+Seattle HN Center:Seattle High Center:128.450:CH:C:SEA:CTR:SEA:HN-CTR:6601:6637 ;High North Sector
+Seattle HS Center:Seattle High Center:135.150:DH:C:SEA:CTR:SEA:HS-CTR:6640:6677 ;High South Sector
+Seattle LN Center:Seattle Low Center:123.950:NL:C:SEA:CTR:SEA:LN-CTR:4726:4762 ;Low North Sector
+Seattle LS Center:Seattle Low Center:127.600:SL:C:SEA:CTR:SEA:LS-CTR:4701:4725 ;Low South Sector
+;8-way high/low split
+Seattle HA Center:Seattle High Center:126.600:AH:C:SEA:CTR:SEA:HA-CTR:4601:4637 ;High NW SECTOR 
+Seattle HB Center:Seattle High Center:134.650:BH:C:SEA:CTR:SEA:HB-CTR:4740:4777 ;High MID SECTOR 
+Seattle HC Center:Seattle High Center:128.450:CH:C:SEA:CTR:SEA:HC-CTR:6601:6637 ;High NE SECTOR 
+Seattle HD Center:Seattle High Center:135.150:DH:C:SEA:CTR:SEA:HD-CTR:6640:6677 ;High SOUTH SECTOR 
+Seattle LA Center:Seattle Low Center:125.100:AL:C:SEA:CTR:SEA:LA-CTR:4601:4637 ;Low NW SECTOR 
+Seattle LB Center:Seattle Low Center:125.800:BL:C:SEA:CTR:SEA:LB-CTR:4740:4777 ;Low MID SECTOR 
+Seattle LC Center:Seattle Low Center:126.100:CL:C:SEA:CTR:SEA:LC-CTR:4640:4677 ;Low NE SECTOR 
+Seattle LD Center:Seattle Low Center:127.600:DL:C:SEA:CTR:SEA:LD-CTR:4701:4737 ;Low SOUTH SECTOR 
+; 
+; 
+; NEIGHBORING CENTERS & CONTROL (0'S) / no sqk 
+; 
+Oakland Oceanic:San Francisco Radio:131.950:01:C:KZAK:FSS:KZAK:FSS 
+Oakland Center:-:132.200:02:C:OAK:CTR:OAK:CTR 
+Oakland C Center:Oakland Center:128.800:08:C:OAK:CTR:OAK:C-CTR 
+Salt Lake City Center:-:133.600:03:C:SLC:CTR:SLC:CTR 
+Edmonton Center:-:132.850:07:-:CZEG:CTR:EDM:CTR 
+Traffic Management Unit:-:199.998:09:-:TMU:FSS:TMU:FSS 
+; 
+; VANCOUVER CONTROL AREAS (V's) 
+; 
+Vancouver South Centre:Vancouver Centre:133.700:VS:C:CZVR:CTR:CZVR:S-CTR 
+Vancouver North Centre:Vancouver Centre:133.600:VN:C:CZVR:CTR:CZVR:N-CTR 
+Vancouver East Centre:Vancouver Centre:134.400:VE:C:CZVR:CTR:CZVR:E-CTR 
+Vancouver West Centre:Vancouver Centre:133.400:VW:C:CZVR:CTR:CZVR:W-CTR 
+Vancouver Approach:-:128.600:VA:V:CYVR:APP:YVR:APP 
+Vancouver Departure:-:132.300:VD:V:CYVR:DEP:YVR:DEP 
+Vancouver Tower:-:0T:VT:CYVR:TWR:YVR:TWR 
+Victoria Approach:-:0Y:VY:CYYJ:APP:YYJ:APP 
+; 
+; 
+; SEATTLE APPROACH S46 (1's) / 1501-1577 
+; 
+Seattle Combined Approach:-:125.600:1W:W:SEA:APP:SEA:APP:1501:1577 
+Seattle East Approach:-:123.900:1E:E:SEA:APP:SEA:E-APP:1501:1577 
+Seattle West Approach:-:125.600:1W:W:SEA:APP:SEA:W-APP:1501:1577 
+Seattle Final Approach:-:133.650:1F:F:SEA:APP:SEA:F-APP:1501:1577 
+Seattle Boeing Final Approach:-:125.900:1D:D:SEA:APP:SEA:D-APP:1501:1577 
+Seattle Departure:-:120.400:1Y:Y:SEA:DEP:SEA:Y-DEP:1501:1577 
+Seattle Departure West:-:120.400:1Y:Y:SEA:APP:SEA:Y-APP:1501:1577 
+Seattle Departure East:-:119.200:1A:A:SEA:APP:SEA:A-APP:1501:1577 
+Seattle Satellite Approach McChord/Combined:-:126.500:1N:N:SEA:APP:SEA:N-APP:1501:1577 
+Seattle Satellite Narrows Bremerton:-:127.100:1K:K:SEA:APP:SEA:K-APP:1501:1577 
+Seattle Satellite Olympia:-:121.100:1O:O:SEA:APP:SEA:O-APP:1501:1577 
+Seattle Satellite Paine:-:128.500:14:4:SEA:APP:SEA:4-APP:1501:1577
+; Towers 
+Seattle Combined Tower:-:119.900:1T:T:SEA:TWR:SEA:TWR:1501:1577 
+Seattle East Tower:-:119.900:1T:T:SEA:TWR:SEA:E-TWR:1501:1577 
+Seattle West Tower:-:120.950:1J:J:SEA:TWR:SEA:W-TWR:1501:1577 
+Seattle Ground:-:121.700:1G:-:SEA:GND:SEA:GND:1501:1577 
+Seattle Clearance:-:128.000:1L:-:SEA:DEL:SEA:DEL:1501:1577 
+Boeing Tower:-:118.300:1B:B:BFI:TWR:BFI:TWR:1550:1577 
+Boeing Ground:-:121.900:1H:-:BFI:GND:BFI:GND:1550:1577 
+Boeing Clearance:-:132.400:1I:-:BFI:DEL:BFI:DEL:1550:1577 
+McChord Tower:-:124.800:1M:-:TCM:TWR:TCM:TWR:1550:1577
+McChord Ground:-:118.170:19:-:TCM:GND:TCM:GND:1550:1577
+Renton Tower:-:124.700:1R:-:RNT:TWR:RNT:TWR:1550:1577 
+Renton Ground:-:121.600:1U:-:RNT:GND:RNT:GND:1550:1577 
+Tacoma Tower:-:118.500:1C:-:TIW:TWR:TIW:TWR:1550:1577 
+Tacoma Ground:-:121.800:1V:-:TIW:GND:TIW:GND:1550:1577 
+Paine Tower:-:132.950:1P:-:PAE:TWR:PAE:TWR:1550:1577 
+Paine Ground:-:121.800:18:-:PAE:GND:PAE:GND:1550:1577 
+Paine Clearance:-:126.750:1Q:-:PAE:DEL:PAE:DEL:1550:1577 
+Olympia Tower:-:124.400:1Z:-:OLM:TWR:OLM:TWR:1550:1577 
+Olympia Ground:-:121.600:1X:-:OLM:GND:OLM:GND:1550:1577 
+Gray Tower:-:119.320:1J:-:GRF:TWR:GRF:TWR:1550:1577 
+Gray Ground:-:121.900:1S:-:GRF:GND:GRF:GND:1550:1577 
+; 
+; FUTURE USE (2's) 
+; 
+; PORTLAND APPROACH (3'S) / 1601-1677 
+; 
+Portland Combined Approach:-:124.350:3N:N:PDX:APP:PDX:APP:1601:1677 
+Portland North Approach:-:124.350:3N:N:PDX:APP:PDX:N-APP:1601:1677 
+Portland South Approach:-:118.100:3S:S:PDX:APP:PDX:S-APP:1601:1677 
+Portland Final Approach:-:126.900:3F:F:PDX:APP:PDX:F-APP:1601:1677 
+Portland Arrival Approach:-:134.670:3A:A:PDX:APP:PDX:A-APP:1601:1677 
+Portland Newberg Approach:-:126.000:3U:U:PDX:APP:PDX:U-APP:1601:1677 
+; Towers 
+Portland Combined Tower:-:118.700:3T:T:PDX:TWR:PDX:TWR:1601:1677 
+Portland North Tower:-:118.700:3T:T:PDX:TWR:PDX:N-TWR:1601:1677 
+Portland South Tower:-:123.770:3E:E:PDX:TWR:PDX:S-TWR:1601:1677 
+Portland Ground:-:121.900:3G:G:PDX:GND:PDX:GND:1601:1677 
+Portland Clearance:-:120.120:3C:-:PDX:DEL:PDX:DEL:1601:1677 
+Troutdale Tower:-:120.900:3R:-:TTD:TWR:TTD:TWR:1650:1677 
+Troutdale Ground:-:121.800:3L:-:TTD:GND:TTD:GND:1650:1677 
+Hillsboro Tower:-:119.300:3H:-:HIO:TWR:HIO:TWR:1650:1677 
+Hillsboro Ground:-:121.700:3D:-:HIO:GND:HIO:GND:1650:1677 
+; 
+; SPOKANE APPROACH (4's) / 3501-3547 
+; 
+Spokane Combined Approach:-:133.350:4E:E:GEG:APP:GEG:APP:3501:3547 
+Spokane East Approach:-:133.350:4E:E:GEG:APP:GEG:E-APP:3501:3547 
+Spokane West Approach:-:123.750:4W:W:GEG:APP:GEG:W-APP:3501:3547 
+Spokane Tower:-:118.300:4T:T:GEG:TWR:GEG:TWR:3501:3547 
+Spokane Ground:-:121.900:4G:-:GEG:GND:GEG:GND:3501:3547 
+Spokane Clearance:-:127.550:4L:-:GEG:DEL:GEG:DEL:3501:3547 
+Fairchild Tower:-:126.200:4S:-:SKA:TWR:SKA:TWR:3501:3547 
+Fairchild Ground:-:121.85:4J:-:SKA:TWR:SKA:GND:3501:3547 
+Felts Tower:-:132.500:4F:-:SFF:TWR:SFF:TWR:3501:3547 
+Felts Ground:-:121.700:4Z:-:SFF:GND:SFF:GND:3501:3547 
+; 
+; GRANT COUNTY APPROACH (5'S) / 3560-3577
+; 
+Grant County Approach:-:126.400:5A:A:MWH:APP:MWH:APP:3560:3577
+; Grant County Approach:-:126.100:5D:D:MWH:APP:MWH:APP:3560:3577
+Grant County Tower:-:118.250:5T:T:MWH:TWR:MWH:TWR:3560:3577 
+Grant County Tower:-:128.000:5E:E:MWH:TWR:MWH:E-TWR:3560:3577 
+Grant County Ground:-:121.900:5G:-:MWH:GND:MWH:GND:3560:3577 
+; 
+; CHINOOK APPROACH (6's) / 4601-4643 
+; 
+Chinook Approach Pasco Combined:Chinook Approach:128.750:6A:A:PSC:APP:PSC:APP:4601:4643 
+Chinook Approach Pasco North:Chinook Approach:128.750:6N:N:PSC:APP:PSC:N-APP:4601:4643 
+Chinook Approach Pasco South:Chinook Approach:133.150:6S:S:PSC:APP:PSC:S-APP:4601:4643 
+Chinook Approach Yakima:Chinook Approach:123.800:6Y:Y:YKM:APP:YKM:APP:4601:4643 
+Tri-Cities Tower:-:135.300:6T:-:PSC:TWR:PSC:TWR:4601:4643 
+Tri-Cities Ground:-:121.800:6G:-:PSC:GND:PSC:GND:4601:4643 
+Tri-Cities Clearance:-:120.000:6D:-:PSC:DEL:PSC:DEL:4601:4643 
+Yakima Tower:-:133.250:6K:-:YKM:TWR:YKM:TWR:4601:4643 
+Yakima Ground:-:121.900:6R:-:YKM:GND:YKM:GND:4601:4643  
+Walla Walla Tower:-:118.500:6W:-:ALW:TWR:ALW:TWR:4601:4643 
+Walla Walla Ground:-:121.600:6L:-:ALW:GND:ALW:GND:4601:4643 
+Pendleton Tower:-:119.700:6P:-:PDT:TWR:PDT:TWR:4601:4643 
+Pendleton Ground:-:121.900:6U:-:PDT:GND:PDT:GND:4601:4643 
+; 
+; CASCADE APPROACH (7's) / 4726-4777 
+; 
+Cascade Approach Eugene Combined:Cascade Approach:119.600:7A:A:EUG:APP:EUG:APP:4726:4762
+Cascade Approach Eugene East:Cascade Approach:119.600:7W:W:EUG:APP:EUG:W-APP:4726:4762 
+Cascade Approach Eugene West:Cascade Approach:120.250:7E:E:EUG:APP:EUG:E-APP:4726:4762 
+Cascade Approach Medford:Cascade Approach:124.300:7M:M:MFR:APP:MFR:APP:4763:4777 
+Eugene Tower:-:118.900:7T:-:EUG:TWR:EUG:TWR:4726:4762 
+Eugene Ground:-:121.700:7G:-:EUG:GND:EUG:GND:4726:4762 
+Medford Tower:-:119.400:7F:-:MFR:TWR:MFR:TWR:4763:4777 
+Medford Ground:-:121.800:7R:-:MFR:GND:MFR:GND:4763:4777 
+; 
+; OTHER FIELDS (8's) 4701 - 4777
+; 
+Kingsley Approach:-:123.670:8K:L:LMT:APP:LMT:APP:4701:4725 
+Kingsley Tower:-:133.970:8T:-:LMT:TWR:LMT:TWR:4701:4725 
+Kingsley Ground:-:121.900:8M:-:LMT:GND:LMT:GND:4701:4725 
+Bellingham Tower:-:118.500:8B:-:BLI:TWR:BLI:TWR:4654:4677 
+Bellingham Ground:-:127.400:8N:-:BLI:GND:BLI:GND:4654:4677 
+Lewiston Tower:-:119.400:8E:-:LWS:TWR:LWS:TWR:4644:4653 
+Lewiston Ground:-:121.900:8G:-:LWS:GND:LWS:GND:4644:4653 
+Redmond Tower:-:124.500:8R:-:RDM:TWR:RDM:TWR:4701:4725 
+Redmond Ground:-:121.800:8Q:-:RDM:GND:RDM:GND:4701:4725 
+Salem Tower:-:119.100:8S:-:SLE:TWR:SLE:TWR:4726:4762 
+Salem Ground:-:121.900:8J:-:SLE:GND:SLE:GND:4726:4762 
+North Bend Tower:-:118.450:8O:-:OTH:TWR:OTH:TWR:4763:4777 
+North Bend Ground:-:127.100:8P:-:OTH:GND:OTH:GND:4763:4777 
+; 
+; WHIDBEY APPROACH (9's) 4654 - 4677
+;
+Whidbey Combined Approach:Whidbey Approach:118.200:9A:W:NUW:APP:NUW:APP:4654:4677 
+Whidbey West Approach:-:118.200:9W:W:NUW:APP:NUW:W-APP:4654:4677 
+Whidbey East Approach:-:120.700:9E:E:NUW:APP:NUW:E-APP:4654:4677 
+Whidbey Tower:-:127.900:9T:-:NUW:TWR:NUW:TWR:4654:4677 
+Whidbey Ground:-:121.750:9G:-:NUW:GND:NUW:GND:4654:4677 

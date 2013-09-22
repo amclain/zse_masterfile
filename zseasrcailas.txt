@@ -1,0 +1,298 @@
+TODAY (update these as necessary):
+.rw contact me on $myrw
+.SEA Seattle altimeter $altim(KSEA)
+.BFI Boeing Field altimeter $altim(KBFI)
+.PDX Portland altimeter $altim(KPDX)
+.YVR Vancouver altimeter $altim(CYVR)
+.alt $1 altimeter $altim($1)
+.jot .sticky $1
+
+.ktcmils16 .ff STEIL CHENY
+.PDT .RSB PDT $1
+.GEG .RSB GEG $1
+.TEMPL .RSB TEMPL $1
+.YKM .RSB YKM $1
+.temp .QQ $1
+.startup .ff ALKIA JAKSN RADDY FOURT HETHR HELNS VANTZ BONVL FLAAK IWACK SUMMA ELMAA BANGR BLUIT AUBRN ARRIE JAWBN TIMEE
+.seasouth .ff anvil
+.seanorth .ff TIFYS
+.pdxeast .ff TRAYL BLAZR SAUVI YORKY
+.airport .ff A A1 A2 A3 A4 A5 A6 A7 A8 A9 B B1 B2 B3 B4 C D E F G H K K1 L M N P R RAMP 16R 16L 34R 34L
+.airport2 .ff A A1 A2 A3 A4 A5 A6 A7 A8 A9 B B1 B2 B3 B4 C D E F G H K K1 L M N P R RAMP
+.airportRwy .ff 16R 16L 34R 34L
+.eugiy16r .ff HOCUM FRAKK NOTTI
+.eugidz16r .ff HOCUM FRAKK VAUGN
+.eugvdt16r .ff MOHWK WEBST
+.eugvga .ff EYMAN
+.eugr16l .ff SHEDD FIPMA KIBKE WELID SAGIN
+.eugld16l .ff SHEDD FIPMA KIBKE SAGIN
+.eugvdt34l .ff VAUGN SAGIN DUKKS
+.eugscenery Updated KEUG scenery can be found at library.avsim.net/esearch.php?DLID=81202
+
+.airnav .openurl www.airnav.com/airport/$1
+.flightaware .openurl www.flightaware.com/resources/airport/$1/procedures
+
+.p80airport .ff TOWER FUEL A A1 A2 A3 A4 A5 A6 A7 A8 AA PARK B B2 B1 B4 B5 B6 B7 B8 C C1 C5 C6 C8 E E2 E3 E4 E5 E6 F G H J M T FBO SRAMP 
+
+HANDOFF:
+.depart contact $1 on $freq($2), have a $3 $4
+.ho contact $1 on $2.$3, good day
+.hosc contact Seattle Center on 124.20, g'day.
+.hosa contact Seattle Approach on 119.20, g'day.
+.host contact Seattle Tower on 119.90, g'day.
+.hopa contact Portland Approach on 124.35, g'day.
+.hopt contact Portland Tower on 123.77, g'day.
+.hooc contact Oakland Center on 132.20, g'day.
+.hoocc contact Oakland Center on 128.80, g'day.
+.hovc contact Vancouver Center on 133.70, g'day.
+.hoslc contact Salt Lake Center on 134.35, g'day.
+.app $aircraft contact approach with your request $1 $2 $3 $4 $5 $6 $7 $8 $9
+.del $aircraft contact clearance delivery with your request $1 $2 $3 $4 $5 $6 $7 $8 $9
+.fss $aircraft contact FSS with your request $1 $2 $3 $4 $5 $6 $7 $8 $9
+.gnd $aircraft contact ground with your request $1 $2 $3 $4 $5 $6 $7 $8 $9
+.twr $aircraft contact the tower with your request $1 $2 $3 $4 $5 $6 $7 $8 $9
+
+SOUTHERN CALIFORNIA CLEARANCES:
+.cS6L cleared to $1 via the Summa 7 dep, LKV trans, then as filed, c/m 9000, expect $2 in 10, departure on $3.$4, squawk $5
+
+CLEARANCE:
+.arcc I have your clearance, advise when ready to copy
+.c is cleared to $1, via RWY HDG, radar vectors $2, then as filed, maintain $3, expect $4 10 mins after dep  dep freq $5, squawk $6
+.caf is cleared to $1 as filed, cm $2, expect $3 10 mins after dep, dep freq $freq($4), squawk $5
+.cor clearance on request, standby
+.cpidp $aircraft is cleared to $1 via the published instrument dep procedure, $2, then as filed, climb and maintain $3, expect $4 10 mins after dep, dep freq $5, squawk $6
+.cSID cleared to $1 via the $2 dep $3 then as filed, cm 4000, expect $4 10 mins after dep, dep freq $5, squawk $6
+.cl Cleared to $1 as filed. 
+.cmefl c/m $1, expect $2 in 10. 
+.depfreq departure frequency $freq($1)
+.squawk squawk $1
+.cld Cleared to $1 via the $2 departure, then as filed. 
+.cldt Cleared to $1 via the $2 departure, $3 transition, then as filed. 
+
+GROUND:
+.trdy advise when ready for taxi
+.hover Helicopter hover taxi $1 $2 $3 $4 $5 $6 $7 $8 $9
+.hs hold short of $1 $2 $3 $4 $5 $6 $7 $8 $9
+.hslt hold short of runway $1, landing traffic
+.nd you're currently number $1 for dep $2 $3 $4 $5 $6 $7 $8 $9 
+.pba pushback approved, advise when ready to taxi with info $1
+.rhs report holding short $1 $2 $3 $4 $5 $6 $7 $8 $9
+.t taxi runway $1 $2 $3 $4 $5 $6 $7 $8 $9
+.tg taxi to your gate $1 $2 $3 $4 $5 $6 $7 $8 $9
+.tg24R cross runway 24L, taxi via Echo to the gate
+.tg25L cross runway 25R, taxi via Bravo to the gate
+.ths taxi runway $1, report holding short
+.tpark taxi to parking
+.tramp taxi to the ramp
+.xrwy cross runway $1 $2 $3 $4 $5 $6 $7 $8 $9
+.supb engine start and pushback approved
+.rbcspa readback correct.  Engine start and pushback approved, advise ready to taxi with info $1
+.rbcsp readback correct.  Engine start and pushback approved, advise ready to taxi
+
+TOWER:
+.at Helicopter air taxi $1 $2 $3 $4 $5 $6 $7 $8 $9
+.ht Helicopter hover taxi $1 $2 $3 $4 $5 $6 $7 $8 $9
+.ctl runway $1, cleared to land $2 $3 $4 $5 $6 $7 $8 $9
+.ctlc runway $1, cleared to land, wind light and variable
+.ctlw runway $1, cleared to land, wind $winds
+.cit runway $1, cleared for immediate takeoff, advise if unable
+.to runway $1, cleared for takeoff $2 $3 $4 $5 $6 $7 $8 $9
+.toc runway $1, cleared for takeoff, wind light and variable
+.tow  runway $1, cleared for takeoff, wind $winds
+.e45lt enter the 45 for left traffic runway $1, report entering downwind
+.e45rt enter the 45 for right traffic runway $1, report entering downwind.
+.edw extend your downwind, I'll call your base
+.elb enter left base for runway $1 $2 $3 $4 $5 $6 $7 $8 $9
+.erb enter right base for runway $1 $2 $3 $4 $5 $6 $7 $8 $9
+.lift Helicopter cleared for liftoff $1 $2 $3 $4 $5 $6 $7 $8 $9
+.tph runway $1, taxi into position and hold
+.rdist report $1 miles $2 of the airport
+.rf report a $1 mile final
+.ss change to runway $1 $2 $3 $4 $5 $6 $7 $8 $9
+.dep $metar($dep)
+
+ARRIVALS:
+.arr $metar($arr)
+.altim $arr altimeter $altim($arr)
+.ap the airport is at your $1 o'clock and $2 miles
+.apn $1 is at your $2 o’clock and $3 miles
+.apnr $1 is at your $2 o’clock and $3 miles, report it in sight
+.apr the airport is at your $1 o’clock and $2 miles, report it in sight
+.asa simultaneous approaches are in progress, use caution, do not cross localizer
+.cecb $aircraft is cleared to enter Class B airspace $1 $2 $3 $4 $5 $6 $7 $8 $9
+
+ALTITUDE:
+.cm climb and maintain $1 $2 $3 $4 $5 $6 $7 $8 $9
+.cpd climb at pilot's discretion to $1 $2 $3 $4 $5 $6 $7 $8 $9
+.dm descend and maintain $1 $2 $3 $4 $5 $6 $7 $8 $9
+.dpd descend at pilot's discretion maintain $1 $2 $3 $4 $5 $6 $7 $8 $9
+.ecm climb and maintain $1, expedite through $2 $3 $4 $5 $6 $7 $8 $9
+.edm descend and maintain $1, expedite through $2 $3 $4 $5 $6 $7 $8 $9
+.laa LOW ALTITUDE ALERT, CLIMB IMMEDIATELY TO $1
+.mpa maintain present altitude $1 $2 $3 $4 $5 $6 $7 $8 $9
+
+VECTOR:
+.cd cleared direct to $1 $2 $3 $4 $5 $6 $7 $8 $9
+.cdron cleared direct to $1, resume own navigation $2 $3 $4 $5 $6 $7 $8 $9
+.cdronh fly heading $1, cleared direct $2 when able, and resume own navigation
+.cdrru cleared direct to $1, rest of route unchanged
+.depv depart $1 heading $2, vectors to $3 $4 $5 $6 $7 $8 $9
+.ed expect direct $1 in $2 $3 $4 $5 $6 $7 $8 $9
+.ev expect vectors to $1 $2 $3 $4 $5 $6 $7 $8 $9
+.fph fly present heading $1 $2 $3 $4 $5 $6 $7 $8 $9
+.h fly heading $1 $2 $3 $4 $5 $6 $7 $8 $9
+.ha fly heading $1, maintain $2 $3 $4 $5 $6 $7 $8 $9
+.hav fly heading $1, maintain $2, vectors $3 $4 $5 $6 $7 $8 $9
+.havald fly heading $1, maintain $2, vector across the localizer for your descent
+.havals fly heading $1, maintain $2, vector across the localizer for spacing
+.hiri fly heading $1, intercept the $2 $3 degree radial inbound, and resume own navigation $4 $5 $6 $7 $8 $9
+.hiro fly heading $1, intercept the $2 $3 degree radial outbound, and resume own navigation $4 $5 $6 $7 $8 $9
+.hv fly heading $1 vector to $2 $3 $4 $5 $6 $7 $8 $9
+.hvald fly heading $1, vector across the localizer for your descent
+.hvals fly heading $1, vector across the localizer for spacing
+.tl turn left heading $1 $2 $3 $4 $5 $6 $7 $8 $9
+.tlcm turn left heading $1, climb and maintain $2 $3 $4 $5 $6 $7 $8 $9
+.tlcmv turn left heading $1, climb and maintain $2, vectors to $3 $4 $5 $6 $7 $8 $9
+.tldm turn left heading $1, descend and maintain $2 $3 $4 $5 $6 $7 $8 $9
+.tldmv turn left heading $1, descend and maintain $2, vectors to $3 $4 $5 $6 $7 $8 $9
+.tlh turn left heading $1 $2 $3 $4 $5 $6 $7 $8 $9
+.tli turn left heading $1, intercept $2 $3 $4 $5 $6 $7 $8 $9 and resume own navigation
+.tlm turn left heading $1, maintain $2 $3 $4 $5 $6 $7 $8 $9
+.tlmv turn left heading $1, maintain $2, vectors to $3 $4 $5 $6 $7 $8 $9
+.tlv turn left heading $1, vectors to $2 $3 $4 $5 $6 $7 $8 $9
+.tr turn right heading $1 $2 $3 $4 $5 $6 $7 $8 $9
+.trcm turn right heading $1, climb and maintain $2 $3 $4 $5 $6 $7 $8 $9
+.trcmv turn right heading $1, climb and maintain $2, vectors to $3 $4 $5 $6 $7 $8 $9
+.trdm turn right heading $1, descend and maintain $2 $3 $4 $5 $6 $7 $8 $9
+.trdmv turn right heading $1, descend and maintain $2, vectors to $3 $4 $5 $6 $7 $8 $9
+.trh turn right heading $1 $2 $3 $4 $5 $6 $7 $8 $9
+.tri turn right heading $1, intercept $2 and resume own navigation
+.trm turn right heading $1, maintain $2
+.trmv turn right heading $1, maintain $2, vectors to $3 $4 $5 $6 $7 $8 $9
+.trv turn right heading $1, vectors to $2 $3 $4 $5 $6 $7 $8 $9
+.val this vector will take you across the localizer
+.vilti fly heading $1, intercept the localizer and track inbound
+
+SPEED:
+.dne do not exceed $1 $2 $3 $4 $5 $6 $7 $8 $9
+.is increase speed to $1 $2 $3 $4 $5 $6 $7 $8 $9
+.mmfs maintain maximum forward speed $1 $2 $3 $4 $5 $6 $7 $8 $9
+.mmfsu maintain maximum forward speed until $1 $2 $3 $4 $5 $6 $7 $8 $9
+.mps maintain present speed $1 $2 $3 $4 $5 $6 $7 $8 $9
+.msps maintain slowest practical speed $1 $2 $3 $4 $5 $6 $7 $8 $9
+.mspsu maintain slowest practical speed until $1 $2 $3 $4 $5 $6 $7 $8 $9
+.ras reduce to approach speed
+.rfas reduce to final approach speed
+.rns resume normal speed $1 $2 $3 $4 $5 $6 $7 $8 $9
+.rs reduce speed to $1 $2 $3 $4 $5 $6 $7 $8 $9
+
+CROSSING:
+.x cross $1 at $2 $3 $4 $5 $6 $7 $8 $9
+.xm cross $1 at and maintain $2 $3 $4 $5 $6 $7 $8 $9
+.xms cross $1 at and maintain $2 and $3 KTS $4 $5 $6 $7 $8 $9
+
+APPROACH:
+.capp $aircraft is $dist($1) from $1, maintain $2 until established, cleared for the $3 approach $4 $5 $6 $7 $8 $9
+.cappv $aircraft is $dist($1) from $1, fly heading $2, maintain $3 until established Cleared $4 approach $5 $6 $7 $8 $9
+.ctl you have crossed through the localizer, fly heading $1 to re-intercept
+.cva cleared for visual approach runway $1 $2 $3 $4 $5 $6 $7 $8 $9
+.ecb $aircraft is exiting Class B airspace Radar service is terminated, squawk 1200, freq change approved, good day
+.ema execute missed approach $1 $2 $3 $4 $5 $6 $7 $8 $9
+.emarh execute missed approach, fly runway heading, maintain $1 $2 $3 $4 $5 $6 $7 $8 $9
+.eva expect visual approach to runway $1 $2 $3 $4
+.frh fly runway heading $1 $2 $3 $4 $5 $6 $7 $8 $9
+.ilti intercept the localizer and track inbound $1 $2 $3 $4 $5 $6 $7 $8 $9
+.mafp understand missed approach, fly the published missed approach procedure $2 $3 $4 $5 $6 $7 $8 $9
+.mahav understand missed approach, fly heading $1, maintain $2, vectors to $3 $4 $5 $6 $7 $8 $9
+.xc $aircraft is $dist($1) miles from $1, cross $1 at $2, cleared $3 approach $4 $5 $6 $7 $8 $9
+.ils you're $1 miles from the OM.  Fly heading $2, maintain $3 until established, cleared ILS runway $4 approach $5 $6 $7 $8 $9
+
+REPORTING:
+.rais report the airport in sight $1 $2 $3 $4 $5 $6 $7 $8 $9
+.ris $1 is at your $oclock($1) and $dist($1) miles, report it in sight $2 $3 $4 $5 $6 $7 $8 $9
+.rdis $arr is at your $oclock($arr) and $dist($arr) miles, report it in sight $1 $2 $3 $4 $5 $6 $7 $8 $9
+.loc $1 is at your $oclock($1) and $dist($1) miles $2 $3 $4 $5 $6 $7 $8 $9
+.dloc $arr is at your $oclock($arr) and $dist($arr) miles $1 $2 $3 $4 $5 $6 $7 $8 $9
+.rom report the outer marker
+.rr report receiving $1 $2 $3 $4 $5 $6 $7 $8 $9
+.rris report runway in sight
+
+HOLDING:
+.hapOLM Hold west of OLM as published, maintain $1 Expect further clearance in $2 minutes
+
+MISCELLANEOUS:
+.a affirmative $1 $2 $3 $4 $5 $6 $7 $8 $9
+.aar approved as requested
+.adv advise $1 $2 $3 $4 $5 $6 $7 $8 $9
+.aiu advise if unable to comply
+.afw are you familiar with $1 $2 $3 $4 $5 $6 $7 $8 $9
+.alt $1 altimeter $2
+.amend I have an amendment to your routing, advise ready to copy
+.cwt caution wake turbulence $1 $2 $3 $4 $5 $6 $7 $8 $9
+.cf is cleared for $1 $2 $3 $4 $5 $6 $7 $8 $9
+.close **NOTAM** $1 will be closing in $2 minutes
+.close! **NOTAM** $1 CLOSING DUE TO EMERGENCY, AIRCRAFT PLEASE CONTACT NEAREST ATC.
+.cpy do you copy?
+.demerg would you like to declare an emergency?
+.d disregard
+.e expect $1 $2 $3 $4 $5 $6 $7 $8 $9
+.edelay standby, you're number $1 for callback Expect a $2 min delay
+.ga good afternoon $1 $2 $3 $4 $5 $6 $7 $8 $9
+.gd good day $1 $2 $3 $4 $5 $6 $7 $8 $9
+.ge good evening $1 $2 $3 $4 $5 $6 $7 $8 $9
+.gm good morning $1 $2 $3 $4 $5 $6 $7 $8 $9
+.gn good night $1 $2 $3 $4 $5 $6 $7 $8 $9
+.hdr how do you read $1 $2 $3 $4 $5 $6 $7 $8 $9
+.hnf have a nice flight
+.hrsb I have your request, standby
+.ifr select IFR in your flight plan please
+.lag ATTENTION ALL AIRCRAFT, severe system LAG, expect communications delays
+.lmai you are leaving my airspace, ATC not available in next sector, radar service is terminated, freq change approved, good day
+.lmanr you are leaving my airspace, ATC not available in next sector, freq change approved, $1 $2
+.lmav you are leaving my airspace, ATC not available in next sector, radar service is terminated, squawk 1200, freq change approved, good day
+.m maintain $1 $2 $3 $4 $5 $6 $7 $8 $9
+.mvs maintain visual separation with the $1 $2 $3 $4 $5 $6 $7 $8 $9
+.n negative $1 $2 $3 $4 $5 $6 $7 $8 $9
+.nemerg state the nature of your emergency, and advise of intentions
+.pause please do not pause simulator without prior approval from ATC
+.r report $1 $2 $3 $4 $5 $6 $7 $8 $9
+.rbc readback correct
+.rc radar contact $1 $2 $3 $4 $5 $6 $7 $8 $9
+.rca radar contact, $1 altimeter $2
+.rco remain clear of $1 $2 $3 $4 $5 $6 $7 $8 $9
+.rcaev radar contact, $1 altimeter $2, expect vectors to $3
+.rcev radar contact, expect vectors to $1 $2 $3 $4 $5 $6 $7 $8 $9
+.rchav radar contact, fly heading $1, maintain $2 vectors to $3 $4 $5 $6 $7 $8 $9
+.rcl radar contact lost
+.rclacb remain clear of the Los Angeles Class B airspace
+.rfp please resend your flight plan
+.rst radar service is terminated Squawk 1200 Freq change approved
+.rt reset your transponder, squawk $1
+.rti reset your transponder, squawk $1, and ident
+.rtis report traffic in sight
+.s squawk $1
+.sa say again
+.sb standby
+.si squawk $1, and ident
+.sn squawk normal
+.spa say position, and altitude
+.spar say position, altitude, and request
+.sr say request
+.tom contact the tower at the outer marker $1 $2 $3 $4 $5 $6 $7 $8 $9
+.ty thank you $1 $2 $3 $4 $5 $6 $7 $8 $9
+.uvfr unable VFR traffic advisories
+.v are you voice enabled?
+.vr check my atis for IP, and contact me on Roger Wilco please
+.w wind $winds
+.yw you're welcome
+
+MISC control:
+.ifrrel time now $1, clearance void if not off by $2, released for departure, report airborne
+.ifrapp no traffic observed in the vicinity of the airport, radar service terminated, change to advisory freq approved, report canceling IFR this freq
+.vfrdep after dep fly heading $1, maintain VFR at or below $2, expect on course within 5 minutes, dep freq $3, squawk $4
+.vfrcan resume own navigation and appropriate VFR cruising altitude, radar service terminated, squawk 1200, freq change approved, good day
+.ifrcan IFR cancellation received, radar service terminated, squawk 1200, freq change approved, good day
+.cifrg1 $aircraft is cleared to $1 via after dep climb in VFR conditions assuring your own obstacle clearance until reaching $2
+.cifrg2 then via $1, cm $2, expect $3 10 mins after dep, dep freq $4, squawk $5, hold for release
+.vfr squawk $1, taxi and departure at your discretion, report airborne this frequency
+.34R .msg $2 good $1. Please do not connect to VATSIM while on a runway, or prior to starting a flight. Use world->Go to Airport... to select a gate or ramp position for an active flight prior to connecting. See www.vatsim.net/prc for help in flying on VATSIM
