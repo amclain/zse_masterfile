@@ -3738,6 +3738,13 @@ TKTTD N045.33.03.182 W122.24.04.068 ;- KTTD
 TKPDX N045.35.18.294 W122.35.26.803 ;- KPDX
 
 [Labels]
+; Alex's Additions
+"10L"   N45.35.43.250 W122.35.40.750 white ;-
+"10R"   N45.35.44.980 W122.37.26.560 white ;-
+"28L"   N45.34.47.170 W122.34.57.170 white ;-
+"28R"   N45.35.00.340 W122.34.01.170 white ;-
+"21"    N45.35.48.060 W122.35.49.130 white ;-
+"3"     N45.34.53.950 W122.37.05.070 white ;-
 ; Data in this section below this line taken from KHIO_BASEv0.99
 "FUEL" N045.32.06.875 W122.57.09.764 ramp ;- 
 "C"     N045.32.08.673 W122.57.03.795 Taxiway ;- 
