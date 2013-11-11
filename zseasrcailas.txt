@@ -77,7 +77,7 @@ GROUND:
 .nd you're currently number $1 for dep $2 $3 $4 $5 $6 $7 $8 $9 
 .pba pushback approved, advise when ready to taxi with info $1
 .rhs report holding short $1 $2 $3 $4 $5 $6 $7 $8 $9
-.t taxi runway $1 $2 $3 $4 $5 $6 $7 $8 $9
+.t runway $1 taxi via $2 $3 $4 $5 $6 $7 $8 $9
 .tg taxi to your gate $1 $2 $3 $4 $5 $6 $7 $8 $9
 .tg24R cross runway 24L, taxi via Echo to the gate
 .tg25L cross runway 25R, taxi via Bravo to the gate
