@@ -6816,6 +6816,17 @@ ZUVKU N040.52.34.000 W124.02.20.560
 "W"     N046.58.27.184 W122.54.27.532 TaxiwayLabel
 "W"     N046.58.08.871 W122.54.27.642 TaxiwayLabel
 "W"     N046.57.56.503 W122.54.27.973 TaxiwayLabel
+; KTIW - Alex's Addition
+"17"    N047.16.30.829 W122.34.37.459 TaxiwayLabel
+"35"    N047.15.38.094 W122.34.46.910 TaxiwayLabel
+"A"     N047.15.40.797 W122.34.43.430 TaxiwayLabel ; South Apron
+"A1"    N047.16.27.648 W122.34.34.745 TaxiwayLabel
+"A2"    N047.16.04.066 W122.34.39.051 TaxiwayLabel
+"A3"    N047.15.51.586 W122.34.41.293 TaxiwayLabel
+"A"     N047.16.23.910 W122.34.33.545 TaxiwayLabel
+"A"     N047.16.14.608 W122.34.35.208 TaxiwayLabel
+"A"     N047.15.57.629 W122.34.38.267 TaxiwayLabel
+"A"     N047.15.46.238 W122.34.40.423 TaxiwayLabel
 
 [REGIONS]
 water N049.00.12.717 W123.05.22.064
