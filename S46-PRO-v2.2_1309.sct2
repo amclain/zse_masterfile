@@ -6816,6 +6816,11 @@ ZUVKU N040.52.34.000 W124.02.20.560
 "W"     N046.58.27.184 W122.54.27.532 TaxiwayLabel
 "W"     N046.58.08.871 W122.54.27.642 TaxiwayLabel
 "W"     N046.57.56.503 W122.54.27.973 TaxiwayLabel
+; KBFI - Alex's Addition
+"13L"   N047.32.18.493 W122.18.30.849 TaxiwayLabel
+"13R"   N047.32.28.091 W122.18.45.462 TaxiwayLabel
+"31L"   N047.30.58.266 W122.17.28.501 TaxiwayLabel
+"31R"   N047.31.43.082 W122.17.60.557 TaxiwayLabel
 ; KRNT - Alex's Addition
 "16"    N047.30.02.719 W122.13.01.932 TaxiwayLabel
 "34"    N047.29.07.389 W122.12.53.508 TaxiwayLabel
