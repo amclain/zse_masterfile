@@ -3638,10 +3638,51 @@ ZUVKU N040.52.34.000 W124.02.20.560
 
 [LABELS]
 ; KGEG - Alex's Addition
+"TERM"    N047.37.31.088 W117.32.10.871 TaxiwayLabel
+"TRIANGLE RAMP" N047.37.39.424 W117.31.08.143 TaxiwayLabel
+"USPS"    N047.37.39.864 W117.30.54.671 TaxiwayLabel
+"FIRE"    N047.37.42.895 W117.31.49.551 TaxiwayLabel ; Fire Station
+"W CARGO" N047.37.53.831 W117.31.31.923 TaxiwayLabel ; West Cargo Ramp
+"E CARGO" N047.37.27.905 W117.31.16.210 TaxiwayLabel ; East Cargo Ramp
+"N RAMP"  N047.37.17.107 W117.31.23.980 TaxiwayLabel ; North Pilot Ramp
+"S RAMP"  N047.37.08.544 W117.31.23.810 TaxiwayLabel ; South Pilot Ramp
+"S MAINT" N047.36.51.004 W117.31.50.066 TaxiwayLabel ; South Maintenance Ramp
 "3"     N047.36.41.728 W117.32.52.422 TaxiwayLabel
 "7"     N047.37.00.728 W117.33.15.934 TaxiwayLabel
 "21"    N047.38.00.453 W117.30.54.680 TaxiwayLabel
 "25"    N047.36.59.677 W117.31.08.872 TaxiwayLabel
+"A1" 	N047.37.23.888 W117.32.09.588 TaxiwayLabel
+"A2" 	N047.37.27.629 W117.32.03.906 TaxiwayLabel
+"A3" 	N047.37.31.435 W117.31.58.029 TaxiwayLabel
+"A4" 	N047.37.35.764 W117.31.51.078 TaxiwayLabel
+"A5" 	N047.37.40.926 W117.31.42.737 TaxiwayLabel
+"A6" 	N047.37.46.856 W117.31.33.445 TaxiwayLabel
+"A7" 	N047.37.49.110 W117.31.29.885 TaxiwayLabel
+"A" 	N047.37.55.236 W117.31.11.429 TaxiwayLabel
+"A" 	N047.37.52.724 W117.31.21.660 TaxiwayLabel
+"A" 	N047.37.14.612 W117.32.19.994 TaxiwayLabel
+"A" 	N047.37.04.268 W117.32.35.565 TaxiwayLabel
+"A" 	N047.36.56.765 W117.32.46.949 TaxiwayLabel
+"B" 	N047.36.52.561 W117.32.45.317 TaxiwayLabel
+"B" 	N047.36.48.571 W117.32.33.870 TaxiwayLabel
+"C" 	N047.37.04.309 W117.32.25.551 TaxiwayLabel
+"D" 	N047.37.28.101 W117.31.53.666 TaxiwayLabel
+"D" 	N047.37.24.028 W117.31.51.364 TaxiwayLabel
+"D" 	N047.37.17.461 W117.31.50.815 TaxiwayLabel
+"D" 	N047.36.56.464 W117.31.50.157 TaxiwayLabel
+"E" 	N047.37.26.380 W117.31.47.853 TaxiwayLabel
+"F" 	N047.37.40.879 W117.31.32.527 TaxiwayLabel
+"F" 	N047.37.31.362 W117.31.29.258 TaxiwayLabel
+"G" 	N047.37.49.236 W117.31.02.798 TaxiwayLabel
+"G" 	N047.37.38.340 W117.31.13.067 TaxiwayLabel
+"G" 	N047.37.23.575 W117.31.35.052 TaxiwayLabel
+"G" 	N047.37.07.127 W117.31.59.784 TaxiwayLabel
+"G" 	N047.36.56.601 W117.32.15.499 TaxiwayLabel
+"G" 	N047.36.49.656 W117.32.26.250 TaxiwayLabel
+"J" 	N047.36.56.537 W117.31.35.886 TaxiwayLabel
+"K" 	N047.36.56.522 W117.31.13.819 TaxiwayLabel
+"K" 	N047.36.53.152 W117.31.25.650 TaxiwayLabel
+"K" 	N047.36.53.203 W117.32.05.133 TaxiwayLabel
 
 [RUNWAY]
 ;KCOE runways
