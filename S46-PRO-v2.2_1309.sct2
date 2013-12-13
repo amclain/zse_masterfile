@@ -6821,6 +6821,11 @@ ZUVKU N040.52.34.000 W124.02.20.560
 "13R"   N047.32.28.091 W122.18.45.462 TaxiwayLabel
 "31L"   N047.30.58.266 W122.17.28.501 TaxiwayLabel
 "31R"   N047.31.43.082 W122.17.60.557 TaxiwayLabel
+; KOLM - Alex's Addition
+"8"     N046.58.16.994 W122.54.31.498 TaxiwayLabel
+"26"    N046.58.06.298 W122.53.28.342 TaxiwayLabel
+"17"    N046.58.43.080 W122.54.07.178 TaxiwayLabel
+"35"    N046.57.47.115 W122.54.23.416 TaxiwayLabel
 ; KPAE - Alex's Addition
 "11"    N047.54.38.613 W122.17.16.516 TaxiwayLabel
 "29"    N047.54.05.735 W122.16.24.683 TaxiwayLabel
