@@ -6816,27 +6816,27 @@ ZUVKU N040.52.34.000 W124.02.20.560
 "W"     N046.58.27.184 W122.54.27.532 TaxiwayLabel
 "W"     N046.58.08.871 W122.54.27.642 TaxiwayLabel
 "W"     N046.57.56.503 W122.54.27.973 TaxiwayLabel
-; KBFI - Alex's Addition
+; KBFI - Unofficial Addition
 "13L"   N047.32.18.493 W122.18.30.849 TaxiwayLabel
 "13R"   N047.32.28.091 W122.18.45.462 TaxiwayLabel
 "31L"   N047.30.58.266 W122.17.28.501 TaxiwayLabel
 "31R"   N047.31.43.082 W122.17.60.557 TaxiwayLabel
-; KOLM - Alex's Addition
+; KOLM - Unofficial Addition
 "8"     N046.58.16.994 W122.54.31.498 TaxiwayLabel
 "26"    N046.58.06.298 W122.53.28.342 TaxiwayLabel
 "17"    N046.58.43.080 W122.54.07.178 TaxiwayLabel
 "35"    N046.57.47.115 W122.54.23.416 TaxiwayLabel
-; KPAE - Alex's Addition
+; KPAE - Unofficial Addition
 "11"    N047.54.38.613 W122.17.16.516 TaxiwayLabel
 "29"    N047.54.05.735 W122.16.24.683 TaxiwayLabel
 "16L"   N047.55.18.570 W122.17.11.138 TaxiwayLabel
 "16R"   N047.54.25.733 W122.16.20.620 TaxiwayLabel
 "34L"   N047.53.30.618 W122.17.08.580 TaxiwayLabel
 "34R"   N047.53.50.729 W122.16.19.723 TaxiwayLabel
-; KRNT - Alex's Addition
+; KRNT - Unofficial Addition
 "16"    N047.30.02.719 W122.13.01.932 TaxiwayLabel
 "34"    N047.29.07.389 W122.12.53.508 TaxiwayLabel
-; KTCM - Alex's Addition
+; KTCM - Unofficial Addition
 "CARGO"     N047.09.13.779 W122.28.57.113 TaxiwayLabel
 "TERM"      N047.08.58.646 W122.29.16.366 TaxiwayLabel
 "B RAMP"    N047.08.59.884 W122.28.57.147 TaxiwayLabel
@@ -6863,7 +6863,7 @@ ZUVKU N040.52.34.000 W124.02.20.560
 "H"     N047.07.50.401 W122.28.46.818 TaxiwayLabel
 "H"     N047.07.34.277 W122.28.46.224 TaxiwayLabel
 "L"     N047.08.16.475 W122.28.25.849 TaxiwayLabel
-; KTIW - Alex's Addition
+; KTIW - Unofficial Addition
 "17"    N047.16.30.829 W122.34.37.459 TaxiwayLabel
 "35"    N047.15.38.094 W122.34.46.910 TaxiwayLabel
 "A"     N047.15.40.797 W122.34.43.430 TaxiwayLabel ; South Apron
