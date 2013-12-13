@@ -34,7 +34,7 @@
 ; Data in this section below this line taken from PDX_APP V2
 #define Mountain 33023
 #define River 16711680
-#define mva 1191973
+#define mva 2105376
 #define rings 930326
 #define sector2 5460736
 #define sector3 8388736
