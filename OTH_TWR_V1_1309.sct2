@@ -41,9 +41,9 @@ W124.14.45.670
 #define Alert 16711680
 #define Warning 255
 #define Taxi 8388608  
-#define Taxiway 8388608
+#define Taxiway 16711680
 #define RAMP 8421504
-#define Runway 8421376
+#define Runway 16776960
 #define ClassD 8421376
 #define Closed 255
 
@@ -3311,35 +3311,27 @@ ZUVKU N040.52.34.000 W124.02.20.560
 
 [LABELS]
 ; KOTH - Unofficial Addition
+"GA RAMP"   N043.24.52.384 W124.14.47.122 TaxiwayLabel
 "4"     N043.24.52.159 W124.15.41.142 TaxiwayLabel
 "22"    N043.25.23.215 W124.14.22.254 TaxiwayLabel
 "13"    N043.25.15.414 W124.14.51.247 TaxiwayLabel
 "31"    N043.24.31.568 W124.14.15.265 TaxiwayLabel
-
 "A"     N043.25.09.490 W124.14.51.661 TaxiwayLabel
 "A"     N043.24.58.495 W124.14.42.595 TaxiwayLabel
 "A"     N043.24.45.580 W124.14.31.888 TaxiwayLabel
 "A"     N043.24.35.788 W124.14.23.853 TaxiwayLabel
-
 "A1"    N043.25.01.845 W124.14.44.372 TaxiwayLabel
 "A2"    N043.24.54.384 W124.14.38.004 TaxiwayLabel
 "A3"    N043.24.40.855 W124.14.27.048 TaxiwayLabel
 "A4"    N043.24.32.923 W124.14.20.988 TaxiwayLabel
-
 "C"     N043.24.52.846 W124.15.28.849 TaxiwayLabel
 "C"     N043.25.05.065 W124.14.58.447 TaxiwayLabel
-
 "C3"    N043.25.03.232 W124.15.06.788 TaxiwayLabel
 "C4"    N043.24.56.159 W124.15.24.106 TaxiwayLabel
 "C5"    N043.24.51.045 W124.15.36.320 TaxiwayLabel
-
-
 "X"     N043.25.11.714 W124.14.25.482 TaxiwayLabel
 "X"     N043.25.05.101 W124.14.25.432 TaxiwayLabel
 "X"     N043.24.58.796 W124.14.25.144 TaxiwayLabel
-
-
-
 
 [LOW AIRWAY]
 V27                       N041.46.46.412 W124.14.27.094 N043.24.55.824 W124.10.06.495
