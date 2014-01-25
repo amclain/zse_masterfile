@@ -56,9 +56,10 @@ SOUTHERN CALIFORNIA CLEARANCES:
 .cS6L cleared to $1 via the Summa 7 dep, LKV trans, then as filed, c/m 9000, expect $2 in 10, departure on $3.$4, squawk $5
 
 CLEARANCE:
+.arc advise ready to copy.
 .arcc I have your clearance, advise when ready to copy
 .c is cleared to $1, via RWY HDG, radar vectors $2, then as filed, maintain $3, expect $4 10 mins after dep  dep freq $5, squawk $6
-.caf is cleared to $1 as filed, cm $2, expect $3 10 mins after dep, dep freq $freq($4), squawk $5
+.caf is cleared to $4 as filed, maintain $2, expect $3 10 min after departure, departure frequency $4, squawk $5
 .cor clearance on request, standby
 .cpidp $aircraft is cleared to $1 via the published instrument dep procedure, $2, then as filed, climb and maintain $3, expect $4 10 mins after dep, dep freq $5, squawk $6
 .cSID cleared to $1 via the $2 dep $3 then as filed, cm 4000, expect $4 10 mins after dep, dep freq $5, squawk $6
@@ -78,6 +79,7 @@ GROUND:
 .pba pushback approved, advise when ready to taxi with info $1
 .rhs report holding short $1 $2 $3 $4 $5 $6 $7 $8 $9
 .t runway $1 taxi via $2 $3 $4 $5 $6 $7 $8 $9
+.taxi runway $1 taxi via $2 $3 $4 $5 $6 $7 $8 $9
 .tg taxi to your gate $1 $2 $3 $4 $5 $6 $7 $8 $9
 .tg24R cross runway 24L, taxi via Echo to the gate
 .tg25L cross runway 25R, taxi via Bravo to the gate
@@ -86,22 +88,25 @@ GROUND:
 .tramp taxi to the ramp
 .xrwy cross runway $1 $2 $3 $4 $5 $6 $7 $8 $9
 .supb engine start and pushback approved
+.rbce readback correct. Expect runway $1. Pushback and start at your discretion, advise ready to taxi.
 .rbcspa readback correct.  Engine start and pushback approved, advise ready to taxi with info $1
 .rbcsp readback correct.  Engine start and pushback approved, advise ready to taxi
 
 TOWER:
 .at Helicopter air taxi $1 $2 $3 $4 $5 $6 $7 $8 $9
 .ht Helicopter hover taxi $1 $2 $3 $4 $5 $6 $7 $8 $9
-.ctl runway $1, cleared to land $2 $3 $4 $5 $6 $7 $8 $9
+.ctl wind $winds, runway $1, cleared to land.
 .ctlc runway $1, cleared to land, wind light and variable
-.ctlw runway $1, cleared to land, wind $winds
+.ctlw wind $winds, runway $1, cleared to land.
 .cit runway $1, cleared for immediate takeoff, advise if unable
 .to runway $1, cleared for takeoff $2 $3 $4 $5 $6 $7 $8 $9
 .toc runway $1, cleared for takeoff, wind light and variable
-.tow  runway $1, cleared for takeoff, wind $winds
+.cto  wind $winds, runway $1, cleared for takeoff.
+.tow  wind $winds, runway $1, cleared for takeoff.
 .e45lt enter the 45 for left traffic runway $1, report entering downwind
 .e45rt enter the 45 for right traffic runway $1, report entering downwind.
 .edw extend your downwind, I'll call your base
+.base turn base.
 .elb enter left base for runway $1 $2 $3 $4 $5 $6 $7 $8 $9
 .erb enter right base for runway $1 $2 $3 $4 $5 $6 $7 $8 $9
 .lift Helicopter cleared for liftoff $1 $2 $3 $4 $5 $6 $7 $8 $9
@@ -132,13 +137,13 @@ ALTITUDE:
 .mpa maintain present altitude $1 $2 $3 $4 $5 $6 $7 $8 $9
 
 VECTOR:
-.cd cleared direct to $1 $2 $3 $4 $5 $6 $7 $8 $9
+.cd cleared direct $1
 .cdron cleared direct to $1, resume own navigation $2 $3 $4 $5 $6 $7 $8 $9
 .cdronh fly heading $1, cleared direct $2 when able, and resume own navigation
 .cdrru cleared direct to $1, rest of route unchanged
 .depv depart $1 heading $2, vectors to $3 $4 $5 $6 $7 $8 $9
 .ed expect direct $1 in $2 $3 $4 $5 $6 $7 $8 $9
-.ev expect vectors to $1 $2 $3 $4 $5 $6 $7 $8 $9
+.ev expect vectors $1 $2 $3 $4 $5 $6 $7 $8 $9
 .fph fly present heading $1 $2 $3 $4 $5 $6 $7 $8 $9
 .h fly heading $1 $2 $3 $4 $5 $6 $7 $8 $9
 .ha fly heading $1, maintain $2 $3 $4 $5 $6 $7 $8 $9
@@ -173,6 +178,12 @@ VECTOR:
 .val this vector will take you across the localizer
 .vilti fly heading $1, intercept the localizer and track inbound
 
+.fly fly heading $1
+.pd proceed direct $1 when able
+.cross cross $1 at $2
+.ca cross $1 at $2
+.caa cross $1 at or above $2
+
 SPEED:
 .dne do not exceed $1 $2 $3 $4 $5 $6 $7 $8 $9
 .is increase speed to $1 $2 $3 $4 $5 $6 $7 $8 $9
@@ -192,10 +203,12 @@ CROSSING:
 .xms cross $1 at and maintain $2 and $3 KTS $4 $5 $6 $7 $8 $9
 
 APPROACH:
-.capp $aircraft is $dist($1) from $1, maintain $2 until established, cleared for the $3 approach $4 $5 $6 $7 $8 $9
+.cia cleared ILS runway $1 approach
+.ciap cleared ILS runway $1 approach
+.capp $dist($1) from $1, maintain $2 until established, cleared $3 approach $4 $5 $6 $7 $8 $9
 .cappv $aircraft is $dist($1) from $1, fly heading $2, maintain $3 until established Cleared $4 approach $5 $6 $7 $8 $9
-.ctl you have crossed through the localizer, fly heading $1 to re-intercept
-.cva cleared for visual approach runway $1 $2 $3 $4 $5 $6 $7 $8 $9
+.ctloc you have crossed through the localizer, fly heading $1 to re-intercept
+.cva cleared visual approach runway $1 $2 $3 $4 $5 $6 $7 $8 $9
 .ecb $aircraft is exiting Class B airspace Radar service is terminated, squawk 1200, freq change approved, good day
 .ema execute missed approach $1 $2 $3 $4 $5 $6 $7 $8 $9
 .emarh execute missed approach, fly runway heading, maintain $1 $2 $3 $4 $5 $6 $7 $8 $9
@@ -205,13 +218,20 @@ APPROACH:
 .mafp understand missed approach, fly the published missed approach procedure $2 $3 $4 $5 $6 $7 $8 $9
 .mahav understand missed approach, fly heading $1, maintain $2, vectors to $3 $4 $5 $6 $7 $8 $9
 .xc $aircraft is $dist($1) miles from $1, cross $1 at $2, cleared $3 approach $4 $5 $6 $7 $8 $9
-.ils you're $1 miles from the OM.  Fly heading $2, maintain $3 until established, cleared ILS runway $4 approach $5 $6 $7 $8 $9
+.ils $1 miles from the OM. Fly heading $2, maintain $3 until established, cleared ILS runway $4 approach $5 $6 $7 $8 $9
+
+.ptac dist($1) miles from $1. Fly heading $2, maintain $3 until established on the localizer, cleared ILS runway $4 approach.
+.ptacl dist($1) miles from $1. Turn left heading $2, maintain $3 until established on the localizer, cleared ILS runway $4 approach.
+.ptacr dist($1) miles from $1. Turn right heading $2, maintain $3 until established on the localizer, cleared ILS runway $4 approach.
+.ptacbc dist($1) miles from $1. Fly heading $2, maintain $3 until established on the localizer back course, cleared localizer back course runway $4 approach.
+.ptacbcl dist($1) miles from $1. Turn left heading $2, maintain $3 until established on the localizer back course, cleared localizer back course runway $4 approach.
+.ptacbcr dist($1) miles from $1. Turn right heading $2, maintain $3 until established on the localizer back course, cleared localizer back course runway $4 approach.
 
 REPORTING:
 .rais report the airport in sight $1 $2 $3 $4 $5 $6 $7 $8 $9
-.ris $1 is at your $oclock($1) and $dist($1) miles, report it in sight $2 $3 $4 $5 $6 $7 $8 $9
-.rdis $arr is at your $oclock($arr) and $dist($arr) miles, report it in sight $1 $2 $3 $4 $5 $6 $7 $8 $9
-.loc $1 is at your $oclock($1) and $dist($1) miles $2 $3 $4 $5 $6 $7 $8 $9
+.ris $1 is at your $oclock($1), $dist($1) miles. Report in sight.
+.rdis $arr is at your $oclock($arr), $dist($arr) miles. Report it in sight.
+.loc $1 is at your $oclock($1), $dist($1) miles $2 $3 $4 $5 $6 $7 $8 $9
 .dloc $arr is at your $oclock($arr) and $dist($arr) miles $1 $2 $3 $4 $5 $6 $7 $8 $9
 .rom report the outer marker
 .rr report receiving $1 $2 $3 $4 $5 $6 $7 $8 $9
@@ -226,12 +246,13 @@ MISCELLANEOUS:
 .adv advise $1 $2 $3 $4 $5 $6 $7 $8 $9
 .aiu advise if unable to comply
 .afw are you familiar with $1 $2 $3 $4 $5 $6 $7 $8 $9
-.alt $1 altimeter $2
+.alt altimeter $1
+.alta $1 altimeter $altim($1)
 .amend I have an amendment to your routing, advise ready to copy
 .cwt caution wake turbulence $1 $2 $3 $4 $5 $6 $7 $8 $9
 .cf is cleared for $1 $2 $3 $4 $5 $6 $7 $8 $9
-.close **NOTAM** $1 will be closing in $2 minutes
-.close! **NOTAM** $1 CLOSING DUE TO EMERGENCY, AIRCRAFT PLEASE CONTACT NEAREST ATC.
+.close **NOTAM** $callsign will be closing in $1 minutes
+.close! **NOTAM** $callsign CLOSING DUE TO EMERGENCY, AIRCRAFT PLEASE CONTACT NEAREST ATC.
 .cpy do you copy?
 .demerg would you like to declare an emergency?
 .d disregard
@@ -259,6 +280,7 @@ MISCELLANEOUS:
 .rbc readback correct
 .rc radar contact $1 $2 $3 $4 $5 $6 $7 $8 $9
 .rca radar contact, $1 altimeter $2
+.rcaa radar contact, $1 altimeter $altim($1).
 .rco remain clear of $1 $2 $3 $4 $5 $6 $7 $8 $9
 .rcaev radar contact, $1 altimeter $2, expect vectors to $3
 .rcev radar contact, expect vectors to $1 $2 $3 $4 $5 $6 $7 $8 $9
