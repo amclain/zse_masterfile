@@ -293,7 +293,9 @@ MISCELLANEOUS:
 .cwt caution wake turbulence $1 $2 $3 $4 $5 $6 $7 $8 $9
 .cf is cleared for $1 $2 $3 $4 $5 $6 $7 $8 $9
 .close **NOTAM** $callsign will be closing in $1 minutes
+.closing **NOTAM** $callsign will be closing in $1 minutes
 .close! **NOTAM** $callsign CLOSING DUE TO EMERGENCY, AIRCRAFT PLEASE CONTACT NEAREST ATC.
+.closed **NOTAM** $callsign is closed
 .cpy do you copy?
 .demerg would you like to declare an emergency?
 .d disregard
