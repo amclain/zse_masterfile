@@ -105,6 +105,7 @@ TOWER:
 .tow  wind $winds, runway $1, cleared for takeoff.
 .e45lt enter the 45 for left traffic runway $1, report entering downwind
 .e45rt enter the 45 for right traffic runway $1, report entering downwind.
+.euw extend your upwind, I'll call your crosswind
 .edw extend your downwind, I'll call your base
 .base turn base.
 .elb enter left base for runway $1 $2 $3 $4 $5 $6 $7 $8 $9
@@ -112,10 +113,29 @@ TOWER:
 .lift Helicopter cleared for liftoff $1 $2 $3 $4 $5 $6 $7 $8 $9
 .tph runway $1, taxi into position and hold
 .rdist report $1 miles $2 of the airport
-.rf report a $1 mile final
+.rf report $1 mile final
 .ss change to runway $1 $2 $3 $4 $5 $6 $7 $8 $9
 .dep $metar($dep)
+
+.tar takeoff is at your own risk, use caution
+.taor takeoff is at your own risk, use caution
+.lar landing is at your own risk, use caution
+.laor landing is at your own risk, use caution
+
+.luw runway $1, line up and wait.
 .luaw runway $1, line up and wait.
+
+.tf traffic is on $1 mile final.
+.tof traffic is on $1 mile final.
+.tfp traffic is on $1 mile final for the parallel.
+.tofp traffic is on $1 mile final for the parallel.
+
+.sf traffic is on short final.
+.tsf traffic is on short final.
+.tosf traffic is on short final.
+.sfp traffic is on short final for the parallel.
+.tsfp traffic is on short final for the parallel.
+.tosfp traffic is on short final for the parallel.
 
 ARRIVALS:
 .arr $metar($arr)
@@ -230,6 +250,16 @@ APPROACH:
 .ptacbcl $dist($1) miles from $uc($1). Turn left heading $2, maintain $3 until established on the localizer back course, cleared localizer back course runway $4 approach.
 .ptacbcr $dist($1) miles from $uc($1). Turn right heading $2, maintain $3 until established on the localizer back course, cleared localizer back course runway $4 approach.
 
+.uca radar service terminated, frequency change to advisory approved, report canceling IFR this frequency.
+.ucant no traffic observed in the vicinity of the airport, radar service terminated, frequency change to advisory approved, report canceling IFR this frequency.
+
+.ucd released for departure at $1 zulu, clearance void if not off by $2 zulu, time now $time zulu, frequency change to advisory approved, contact me airborne.
+.rfd released for departure at $1 zulu, clearance void if not off by $2 zulu, time now $time zulu, frequency change to advisory approved, contact me airborne.
+.rfdn released for departure now, frequency change to advisory approved, contact me airborne.
+
+.icr IFR cancellation received $time zulu.
+
+
 REPORTING:
 .rais report the airport in sight $1 $2 $3 $4 $5 $6 $7 $8 $9
 .ris $1 is at your $oclock($1), $dist($1) miles. Report in sight.
@@ -239,6 +269,12 @@ REPORTING:
 .rom report the outer marker
 .rr report receiving $1 $2 $3 $4 $5 $6 $7 $8 $9
 .rris report runway in sight
+
+.ra report airborne
+.rla report landing assured
+
+.rpt report procedure turn inbound
+.rpti report procedure turn inbound
 
 HOLDING:
 .hapOLM Hold west of OLM as published, maintain $1 Expect further clearance in $2 minutes
@@ -250,7 +286,8 @@ MISCELLANEOUS:
 .aiu advise if unable to comply
 .afw are you familiar with $1 $2 $3 $4 $5 $6 $7 $8 $9
 .alt altimeter $1
-.alta $1 altimeter $altim($1)
+.aalt $uc($1) altimeter $altim($1)
+.alta $uc($1) altimeter $altim($1)
 .amend I have an amendment to your routing, advise ready to copy
 .cwt caution wake turbulence $1 $2 $3 $4 $5 $6 $7 $8 $9
 .cf is cleared for $1 $2 $3 $4 $5 $6 $7 $8 $9
@@ -313,6 +350,17 @@ MISCELLANEOUS:
 .vr check my atis for IP, and contact me on Roger Wilco please
 .w wind $winds
 .yw you're welcome
+
+.time $time
+.sal say altitude leaving
+.nto no traffic observed in the vicinity
+.poc proceed on course
+
+.metar $metar($1)
+.newatis ** NOTAM ** $uc($1) current info $uc($2). $metar($1)
+.newinfo ** NOTAM ** $uc($1) current info $uc($2). $metar($1)
+
+.spawn ** you have spawned on an active runway! ** Please relocate to the non-movement area or disconnect from the network.
 
 MISC control:
 .ifrrel time now $1, clearance void if not off by $2, released for departure, report airborne
