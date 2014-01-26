@@ -56,10 +56,10 @@ SOUTHERN CALIFORNIA CLEARANCES:
 .cS6L cleared to $1 via the Summa 7 dep, LKV trans, then as filed, c/m 9000, expect $2 in 10, departure on $3.$4, squawk $5
 
 CLEARANCE:
-.arc advise ready to copy.
-.arcc I have your clearance, advise when ready to copy
-.c is cleared to $1, via RWY HDG, radar vectors $2, then as filed, maintain $3, expect $4 10 mins after dep  dep freq $5, squawk $6
-.caf is cleared to $4 as filed, maintain $2, expect $3 10 min after departure, departure frequency $4, squawk $5
+.arc advise ready to copy
+.arcc I have your clearance, advise ready to copy
+.c cleared to $1, via RWY HDG, radar vectors $2, then as filed, maintain $3, expect $4 10 mins after dep, dep freq $5, squawk $6
+.caf cleared to $1 as filed, maintain $2, expect $3 10 min after departure, departure frequency $4, squawk $5
 .cor clearance on request, standby
 .cpidp $aircraft is cleared to $1 via the published instrument dep procedure, $2, then as filed, climb and maintain $3, expect $4 10 mins after dep, dep freq $5, squawk $6
 .cSID cleared to $1 via the $2 dep $3 then as filed, cm 4000, expect $4 10 mins after dep, dep freq $5, squawk $6
