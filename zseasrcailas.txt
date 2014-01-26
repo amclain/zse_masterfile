@@ -203,6 +203,8 @@ VECTOR:
 
 .fly fly heading $1
 .pd proceed direct $1 when able
+.tlpd turn left heading $1, proceed direct $2 when able
+.trpd turn right heading $1, proceed direct $2 when able
 .crs cross $1 at $2
 .cross cross $1 at $2
 .ca cross $1 at $2
@@ -313,7 +315,7 @@ MISCELLANEOUS:
 .lag ATTENTION ALL AIRCRAFT, severe system LAG, expect communications delays
 .lma leaving my airspace, radar service offline, monitor unicom 122.8, good day
 .lmai leaving my airspace, no further ATC available, radar service terminated, frequency change approved, good day
-.lmar .lmai
+.lmar leaving my airspace, no further ATC available, radar service terminated, frequency change approved, good day
 .lmanr leaving my airspace, no further ATC available, frequency change approved, good day
 .lmav leaving my airspace, no further ATC available, radar service terminated, squawk 1200, frequency change approved, good day
 .m maintain $1 $2 $3 $4 $5 $6 $7 $8 $9
@@ -327,6 +329,7 @@ MISCELLANEOUS:
 .rca radar contact, $1 altimeter $2
 .rcaa radar contact, $1 altimeter $altim($1).
 .rco remain clear of $1 $2 $3 $4 $5 $6 $7 $8 $9
+.rcoa remain clear of the $uc($1) class $uc($2) airspace.
 .rcaev radar contact, $1 altimeter $2, expect vectors to $3
 .rcev radar contact, expect vectors to $1 $2 $3 $4 $5 $6 $7 $8 $9
 .rchav radar contact, fly heading $1, maintain $2 vectors to $3 $4 $5 $6 $7 $8 $9
@@ -340,7 +343,8 @@ MISCELLANEOUS:
 .s squawk $1
 .sa say again
 .sb standby
-.si squawk $1, and ident
+.si squawk $1 and ident
+.sid squawk $1 and ident
 .sn squawk normal
 .ssb squawk standby
 .spa say position, and altitude
