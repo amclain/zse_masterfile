@@ -115,6 +115,7 @@ TOWER:
 .rf report a $1 mile final
 .ss change to runway $1 $2 $3 $4 $5 $6 $7 $8 $9
 .dep $metar($dep)
+.luaw runway $1, line up and wait.
 
 ARRIVALS:
 .arr $metar($arr)
@@ -222,12 +223,12 @@ APPROACH:
 .xc $aircraft is $dist($1) miles from $1, cross $1 at $2, cleared $3 approach $4 $5 $6 $7 $8 $9
 .ils $1 miles from the OM. Fly heading $2, maintain $3 until established, cleared ILS runway $4 approach $5 $6 $7 $8 $9
 
-.ptac $dist($1) miles from $1. Fly heading $2, maintain $3 until established on the localizer, cleared ILS runway $4 approach.
-.ptacl $dist($1) miles from $1. Turn left heading $2, maintain $3 until established on the localizer, cleared ILS runway $4 approach.
-.ptacr $dist($1) miles from $1. Turn right heading $2, maintain $3 until established on the localizer, cleared ILS runway $4 approach.
-.ptacbc $dist($1) miles from $1. Fly heading $2, maintain $3 until established on the localizer back course, cleared localizer back course runway $4 approach.
-.ptacbcl $dist($1) miles from $1. Turn left heading $2, maintain $3 until established on the localizer back course, cleared localizer back course runway $4 approach.
-.ptacbcr $dist($1) miles from $1. Turn right heading $2, maintain $3 until established on the localizer back course, cleared localizer back course runway $4 approach.
+.ptac $dist($1) miles from $uc($1). Fly heading $2, maintain $3 until established on the localizer, cleared ILS runway $4 approach.
+.ptacl $dist($1) miles from $uc($1). Turn left heading $2, maintain $3 until established on the localizer, cleared ILS runway $4 approach.
+.ptacr $dist($1) miles from $uc($1). Turn right heading $2, maintain $3 until established on the localizer, cleared ILS runway $4 approach.
+.ptacbc $dist($1) miles from $uc($1). Fly heading $2, maintain $3 until established on the localizer back course, cleared localizer back course runway $4 approach.
+.ptacbcl $dist($1) miles from $uc($1). Turn left heading $2, maintain $3 until established on the localizer back course, cleared localizer back course runway $4 approach.
+.ptacbcr $dist($1) miles from $uc($1). Turn right heading $2, maintain $3 until established on the localizer back course, cleared localizer back course runway $4 approach.
 
 REPORTING:
 .rais report the airport in sight $1 $2 $3 $4 $5 $6 $7 $8 $9
