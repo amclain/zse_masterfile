@@ -64,7 +64,7 @@ CLEARANCE:
 .cpidp $aircraft is cleared to $1 via the published instrument dep procedure, $2, then as filed, climb and maintain $3, expect $4 10 mins after dep, dep freq $5, squawk $6
 .cSID cleared to $1 via the $2 dep $3 then as filed, cm 4000, expect $4 10 mins after dep, dep freq $5, squawk $6
 .cl Cleared to $1 as filed. 
-.cmefl c/m $1, expect $2 in 10. 
+.cmefl maintain $1, expect $2 in 10 minutes.
 .depfreq departure frequency $freq($1)
 .squawk squawk $1
 .cld Cleared to $1 via the $2 departure, then as filed. 
