@@ -203,6 +203,7 @@ VECTOR:
 
 .fly fly heading $1
 .pd proceed direct $1 when able
+.crs cross $1 at $2
 .cross cross $1 at $2
 .ca cross $1 at $2
 .caa cross $1 at or above $2
