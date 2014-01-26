@@ -202,13 +202,13 @@ VECTOR:
 .vilti fly heading $1, intercept the localizer and track inbound
 
 .fly fly heading $1
-.pd proceed direct $1 when able
-.tlpd turn left heading $1, proceed direct $2 when able
-.trpd turn right heading $1, proceed direct $2 when able
-.crs cross $1 at $2
-.cross cross $1 at $2
-.ca cross $1 at $2
-.caa cross $1 at or above $2
+.pd proceed direct $uc($1) when able.
+.tlpd turn left heading $1, proceed direct $uc($2) when able.
+.trpd turn right heading $1, proceed direct $uc($2) when able.
+.crs cross $uc($1) at $2
+.cross cross $uc($1) at $2
+.ca cross $uc($1) at $2
+.caa cross $uc($1) at or above $2
 
 SPEED:
 .dne do not exceed $1 $2 $3 $4 $5 $6 $7 $8 $9
@@ -224,12 +224,15 @@ SPEED:
 .rs reduce speed to $1 $2 $3 $4 $5 $6 $7 $8 $9
 
 CROSSING:
-.x cross $1 at $2 $3 $4 $5 $6 $7 $8 $9
-.xm cross $1 at and maintain $2 $3 $4 $5 $6 $7 $8 $9
-.xms cross $1 at and maintain $2 and $3 KTS $4 $5 $6 $7 $8 $9
+.x cross $uc($1) at $2
+.xa cross $uc($1) at $2
+.xaa cross $uc($1) at or above $2
+.xm cross $uc($1) at and maintain $2 $3 $4 $5 $6 $7 $8 $9
+.xms cross $uc($1) at and maintain $2 and $3 KTS $4 $5 $6 $7 $8 $9
 
 APPROACH:
 .cia cleared ILS runway $1 approach
+.cils cleared ILS runway $1 approach
 .ciap cleared ILS runway $1 approach
 .capp $dist($1) from $1, maintain $2 until established, cleared $3 approach $4 $5 $6 $7 $8 $9
 .cappv $aircraft is $dist($1) from $1, fly heading $2, maintain $3 until established Cleared $4 approach $5 $6 $7 $8 $9
@@ -245,6 +248,8 @@ APPROACH:
 .mahav understand missed approach, fly heading $1, maintain $2, vectors to $3 $4 $5 $6 $7 $8 $9
 .xc $aircraft is $dist($1) miles from $1, cross $1 at $2, cleared $3 approach $4 $5 $6 $7 $8 $9
 .ils $1 miles from the OM. Fly heading $2, maintain $3 until established, cleared ILS runway $4 approach $5 $6 $7 $8 $9
+
+.dist $dist($1) miles from $uc($1).
 
 .ptac $dist($1) miles from $uc($1). Fly heading $2, maintain $3 until established on the localizer, cleared ILS runway $4 approach.
 .ptacl $dist($1) miles from $uc($1). Turn left heading $2, maintain $3 until established on the localizer, cleared ILS runway $4 approach.
