@@ -265,7 +265,7 @@ APPROACH:
 .rfd released for departure at $1 zulu, clearance void if not off by $2 zulu, time now $time zulu, frequency change to advisory approved, contact me airborne.
 .rfdn released for departure now, frequency change to advisory approved, contact me airborne.
 
-.icr IFR cancellation received $time zulu.
+.icr IFR cancellation received $time zulu, squawk VFR, frequency change approved. Good day!
 
 
 REPORTING:
