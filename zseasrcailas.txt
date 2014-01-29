@@ -265,7 +265,8 @@ APPROACH:
 .rfd released for departure at $1 zulu, clearance void if not off by $2 zulu, time now $time zulu, frequency change to advisory approved, contact me airborne.
 .rfdn released for departure now, frequency change to advisory approved, contact me airborne.
 
-.icr IFR cancellation received $time zulu, squawk VFR, frequency change approved. Good day!
+.icr IFR cancellation received $time zulu.
+.cifr IFR cancellation received $time zulu.
 
 
 REPORTING:
@@ -346,6 +347,7 @@ MISCELLANEOUS:
 .rti reset your transponder, squawk $1, and ident
 .rtis report traffic in sight
 .s squawk $1
+.sq squawk $1
 .sa say again
 .sb standby
 .si squawk $1 and ident
@@ -364,6 +366,9 @@ MISCELLANEOUS:
 .yw you're welcome
 
 .time $time
+.fca frequency change approved
+.fcu monitor unicom 122.8
+.mu monitor unicom 122.8
 .sal say altitude leaving
 .nto no traffic observed in the vicinity
 .poc proceed on course
