@@ -137,6 +137,20 @@ TOWER:
 .tsfp traffic is on short final for the parallel.
 .tosfp traffic is on short final for the parallel.
 
+.er exit runway when able.
+.erwa exit runway when able.
+.erl exit runway to the left when able.
+.erlwa exit runway to the left when able.
+.err exit runway to the right when able.
+.errwa exit runway to the right when able.
+
+.ttp taxi to parking at your discretion.
+.ttpv taxi to parking via
+.ttg taxi to the gate via
+.ttgv taxi to the gate via
+.ttr taxi to the ramp via
+.ttrv taxi to the ramp via
+
 ARRIVALS:
 .arr $metar($arr)
 .altim $arr altimeter $altim($arr)
@@ -147,7 +161,9 @@ ARRIVALS:
 .asa simultaneous approaches are in progress, use caution, do not cross localizer
 .cecb $aircraft is cleared to enter Class B airspace $1 $2 $3 $4 $5 $6 $7 $8 $9
 .cv cleared via the $1 arrival
+.dv descend via the $1 arrival
 .rccv radar contact. cleared via the $1 arrival. $arr altimeter $altim($arr).
+.rcdv radar contact. descend via the $1 arrival. $arr altimeter $altim($arr).
 
 ALTITUDE:
 .cm climb and maintain $1 $2 $3 $4 $5 $6 $7 $8 $9
