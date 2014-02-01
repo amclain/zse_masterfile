@@ -284,6 +284,8 @@ APPROACH:
 .icr IFR cancellation received $time zulu.
 .cifr IFR cancellation received $time zulu.
 
+.rtd resume the departure
+
 
 REPORTING:
 .rais report the airport in sight $1 $2 $3 $4 $5 $6 $7 $8 $9
